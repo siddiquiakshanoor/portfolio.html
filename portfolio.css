@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #2A2A2A;
+    font-family: sans-serif;
+    color: #A0A0A0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    margin: auto;
+    max-width: 1200px;
+}
+.left-side{
+    height: 90vh;
+    background-color:#2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    margin-top: 40px;
+    position: static;
+    padding: 80px 40px;
+    margin-bottom: 0;
+}
+.Profile-section{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.Profile-section img{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 3px solid #3a3a3a;
+    height : 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.Profile-section{
+    font-weight: 700;
+    padding-top: 1.5rem;
+    text-decoration: none;
+}
+.Profile-section p{
+    margin-top: 1.5rem;
+    border: 3px solid #1e1e1e;
+    font-weight: 500;
+    color: #FFBF00;
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem;
+    border-top: 2px solid #3a3a3a;
+    border-bottom: 2px solid #1b1919;
+}
+/* Contact */
+.contact-container{
+    border-top: 2px solid #3a3a3a;
+    border-radius: 16px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 40px;
+}
+.phone-no{
+    color: #A0A0A0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.email{
+    margin-top: 40px;
+}
+.location{
+    color: #A0A0A0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.contact-container a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Social */
+.social-media{
+    border-top: 2px solid #3a3a3a;
+    border-radius: 16px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.social-media i{
+    padding-top: 2rem;
+    font-size: xx-large;
+    padding-bottom: 2rem;
+    color: aliceblue;
+}
+.social-media :hover{
+    color: #767474;
+}
+/* Right-Box */
+.right-side{
+    background-color:#2a2a2a;
+    border: 2px solid #3a3a3a;
+    border-radius: 16px;
+    margin-top: 40px;
+    position: sticky;
+}
+.navigation-bar{
+    text-align: right;
+    gap: 1rem;
+    margin-top: 30px;
+    padding-left: 1rem;
+}
+.navigation-bar a{
+    text-decoration: none;
+    color: #A0A0A0;
+    margin-left: 2.5rem;
+}
+.active, .navigation-bar a:hover{
+    color: #FFBF00;
+}
+.about-sec{
+    text-align: left;
+    border-top: 2px solid #3a3a3a;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+.heading{
+    margin-top: 20px;
+}
+.about-text{
+    margin-top: 20px;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    justify-content: center;
+}
+.line{
+    width: 45px;
+    border: solid 4px #FFBF00;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.skill{
+    text-align: left;
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    border-radius: 16px;
+    padding-top: 30px;
+}
+.grid-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+}
+.item{
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #544e4e;
+    text-align: center;
+}
+.item svg {
+    height: 80px;
+    width: 80px;
+    fill: #FFBF00; /* icon ka color change karega */
+}
+.item h3{
+    font-weight: 400;
+    padding-top: 20px;
+}
+.item p{
+    font-weight: 100;
+    padding-top: 20px;
+    border: 2px solid #767474;
+    box-shadow: #767474;
+    padding: 5px;
+    border-top: #504b4b;
+    border-radius: 20px;
+    border-bottom-style: 2px solid #767676;
+}
+.education-section{
+    border-top: 2px solid #3a3a3a;
+    border-radius: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.education{
+    text-align: left;
+    margin-top: 30px;
+}
+.education-container p{
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+.portfolio-section{
+    text-align: center;
+    border-top: 2px solid #3a3a3a;
+    border-radius: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.portfolio-container img{
+    height: 300px;
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 2px solid #767676;
+}
+.portfolio-container h2{
+    margin-top: 20px;
+    text-align: left;
+}
+.portfolio-container h3{
+    text-align: center;
+    position: static;
+    margin-left: 250px;
+    margin-top: 10px;
+    border: 2px solid #A0A0A0;
+    border-radius: 20px;
+    padding: 0.4rem;
+    box-shadow: #352c20;
+    color: aliceblue;
+    width: 300px;
+}
+.portfolio-container p{
+    margin-top: 10px;
+    text-align: center;
+    color: #A0A0A0;
+}
+.portfolio-container h4{
+    margin-top: 10px;
+    color: rgb(209, 209, 217);
+    text-align: center;
+}
+.portfolio-container a{
+    text-decoration: none;
+    color: azure;
+}
+.repo-link{
+    text-align: center;
+}
+.live-link{
+    text-align: center;
+}
+.Myntra-clone{
+    
+    align-items: center;
+}
+.Myntra-clone img{
+    height: 300px;
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 2px solid #767676;
+}
+.Myntra-clone h3{
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 10px;
+    border: 2px solid #A0A0A0;
+    border-radius: 20px;
+    padding: 0.4rem;
+    box-shadow: #352c20;
+    color: aliceblue;
+    width: 300px;
+    position: static;
+}
+.Myntra-clone p{
+    margin-top: 5px;
+    color: #A0A0A0;
+    width: fit-content;
+    display: block;
+    margin-bottom: 100px;
+}
